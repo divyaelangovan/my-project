@@ -1,0 +1,44 @@
+<html>
+<head><title>login</title>
+</head>
+<body>
+<style>
+.form{
+background: coral;
+size:10px;
+height:1000px;
+width:1100px;
+}
+</style>
+<script type=text/javascript>
+function validateForm() {
+    
+    if (document.myForm.fname.value==="") {
+        alert("Name must be filled out");
+        return false;
+    }
+if (document.myForm.email.value==="") {
+        alert("Name must be filled out");
+        return false;
+    }
+if (document.myForm.enroll.value==="") {
+        alert("Name must be filled out");
+        return false;
+    }
+else
+{
+alert("Login Successfully");
+return true;
+}
+}
+</script>
+<center>
+<form name="myForm" onsubmit="return validateForm()" method="post"><br><br><br>
+Name: <input type="text" name="fname"><br><br>
+email:<input type="text" name="email"><br><br>
+enroll:<input type="text" name="enroll"><br><br>
+<input type="submit" value="Submit">
+</center>
+</form>
+</body>
+</html>
